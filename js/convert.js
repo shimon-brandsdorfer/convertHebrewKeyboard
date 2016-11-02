@@ -14,12 +14,6 @@ function mapStr(str, toHeb) {
 	return res;
 };
 
-function deterLang(str) {
-	//take in consideration mixed strings, and /, spaces;
-	var c = str[0]; 
-	if(c.charCodeAt() < 200) return true;
-};
-
 function convert(str) {
 	var toHeb = deterLang(str);
 	return mapStr(str, toHeb);
